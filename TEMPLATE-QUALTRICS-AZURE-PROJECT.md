@@ -2,8 +2,8 @@
 
 **Version**: 1.0.0 UNNIL (Template)
 **Created**: 2025-11-10
-**Purpose**: Reusable template for Alex Q's Qualtrics + Azure integration projects
-**Based On**: Real-Time Disposition Dashboard implementation
+**Purpose**: Universal starter template for Qualtrics + Azure integration projects
+**Template Type**: Production-ready patterns with complete documentation
 
 ---
 
@@ -29,7 +29,7 @@
 
 ### Phase 0: Project Setup
 - [ ] Clone this repository as template
-- [ ] Update `PROJECT-OBJECTIVES.md` with new project goals
+- [ ] Copy `plan/SAMPLE-PROJECT-PLAN.md` and customize with your goals
 - [ ] Review Qualtrics API requirements (check `qualtrics/DK-QUALTRICS-API-v1.0.0.md`)
 - [ ] Identify required API endpoints from Complete Endpoint Reference
 - [ ] Document Azure SFI governance requirements (see `azure/AZURE-SFI-GOVERNANCE.md`)
@@ -84,9 +84,9 @@ your-qualtrics-azure-project/
 │   └── README.md                        # Qualtrics integration guide
 │
 ├── plan/
-│   ├── PROJECT-OBJECTIVES.md            # Update for your project
+│   ├── SAMPLE-PROJECT-PLAN.md           # Template for your project plan
 │   ├── YYYY-MM-DD-project-plan.md       # Create for your project
-│   └── TEMPLATE-PLAN.md                 # Copy this for new plans
+│   └── README.md                        # Planning guidance
 │
 ├── src/                                  # Your application code
 │   ├── functions/                       # Azure Functions
@@ -460,8 +460,8 @@ git commit -m "Initial commit from Qualtrics-Azure template"
 ```
 
 ### Step 2: Customize for Your Project
-1. Update `PROJECT-OBJECTIVES.md` with your project goals
-2. Create new plan: `plan/2025-MM-DD-your-project-plan.md`
+1. Copy `plan/SAMPLE-PROJECT-PLAN.md` to `plan/YYYY-MM-DD-your-project-plan.md`
+2. Fill in your project goals, requirements, and architecture decisions
 3. Review and adapt Qualtrics API requirements
 4. Design Azure architecture following SFI governance
 5. Update `qualtrics/qualtrics-config.json` with your surveys
@@ -494,7 +494,7 @@ git commit -m "Initial commit from Qualtrics-Azure template"
 
 **Alex Q Workflow**:
 1. Load template context from this document
-2. Review project requirements in `PROJECT-OBJECTIVES.md`
+2. Review project requirements in `plan/SAMPLE-PROJECT-PLAN.md` (or custom plan)
 3. Reference Qualtrics API documentation for required endpoints
 4. Apply SFI governance constraints from `AZURE-SFI-GOVERNANCE.md`
 5. Design solution using three-tier architecture pattern
@@ -512,8 +512,7 @@ git commit -m "Initial commit from Qualtrics-Azure template"
 4. `qualtrics/QUALTRICS-API-QUICK-REF.md` - Quick API reference
 
 **Supporting Documentation**:
-- `qualtrics/SESSION-SUMMARY-2025-11-10.md` - API documentation session recap
-- `plan/PROJECT-OBJECTIVES.md` - Original project objectives (adapt for new projects)
+- `plan/SAMPLE-PROJECT-PLAN.md` - Complete project plan template (copy and customize for your project)
 
 ---
 
@@ -558,11 +557,11 @@ Before starting a new Qualtrics + Azure project, ensure:
 ## 🔄 Template Versioning
 
 **Current Version**: 1.0.0 UNNIL (Template)
-**Based On**: Real-Time Disposition Dashboard v1.0
-**Maintenance**: Update template when new patterns emerge from future projects
+**Template Type**: Universal starter template for Qualtrics + Azure projects
+**Maintenance**: Update template when new patterns and best practices emerge
 
 **Version History**:
-- 1.0.0 (2025-11-10): Initial template creation from Disposition Dashboard project
+- 1.0.0 (2025-11-10): Initial public template release with production-ready patterns
 
 ---
 

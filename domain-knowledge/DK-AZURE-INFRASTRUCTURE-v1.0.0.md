@@ -815,8 +815,8 @@ var client = new CosmosClient(endpoint, credential);
 - `[DK-ALEX-Q-QUALTRICS-SPECIALIST-v1.0.0.md]` (0.95, implements-for, bidirectional) - "Infrastructure supports Qualtrics integration requirements"
 
 **Project Context**:
-- `[plan/2025-11-10-real-time-disposition-dashboard.md]` (1.0, implements-plan, bidirectional) - "Architecture plan requires infrastructure decisions"
-- `[plan/PROJECT-OBJECTIVES.md]` (0.85, supports, unidirectional) - "Infrastructure enables project objectives"
+- `[plan/SAMPLE-PROJECT-PLAN.md]` (0.9, templates, bidirectional) - "Sample plan demonstrates infrastructure planning patterns"
+- `[plan/README.md]` (0.7, guides, unidirectional) - "Planning guidance for infrastructure decisions"
 
 **Azure Integration**:
 - `[azure.instructions.md]` (0.90, best-practices, bidirectional) - "Azure best practices applied to infrastructure selection"

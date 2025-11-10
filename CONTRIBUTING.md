@@ -1,6 +1,9 @@
-# Contributing to Alex Cognitive Architecture
+# Contributing to Qualtrics + Azure Project Template
 
-Thank you for your interest in contributing to the Alex Cognitive Architecture project! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to this template! This document provides guidelines and information for contributors.
+
+**Maintainer**: Fabio Correa
+**Template Architecture**: Alex Q - Qualtrics & Azure Infrastructure Specialist
 
 ## Table of Contents
 

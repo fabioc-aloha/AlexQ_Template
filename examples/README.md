@@ -1,6 +1,6 @@
 # Code Examples
 
-This directory contains standalone, runnable code examples demonstrating key patterns from the Disposition Dashboard project. Each example is self-contained and can be used as a reference for your own implementation.
+This directory contains standalone, runnable code examples demonstrating production-ready patterns for Qualtrics + Azure integration. Each example is self-contained and can be used as a reference for your own implementation.
 
 ---
 
@@ -100,6 +100,6 @@ Most examples require these packages:
 
 ---
 
-*Examples based on production patterns from Disposition Dashboard*
+*Examples based on production-ready patterns*
 *All code tested and verified*
 *Ready for copy-paste into your projects*

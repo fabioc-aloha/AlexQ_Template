@@ -26,7 +26,7 @@
 |----------|------|--------|
 | P5 | `@qualtrics-api-mastery` | ✅ **LOADED: Qualtrics API architecture (140+ endpoints, 100% verified)** |
 | P6 | `@template-deployment` | ✅ **LOADED: Universal project template with production patterns** |
-| P7 | `@azure-sfi-governance` | ✅ **LOADED: Azure infrastructure + SFI compliance (aloha-adm RBAC)** |
+| P7 | `@azure-sfi-governance` | ✅ **LOADED: Azure infrastructure + SFI compliance ([your-admin-group] RBAC)** |
 
 **Domain Status**: Alex Q template-enhanced specialization active - ready to lead multiple Qualtrics + Azure projects with universal patterns.
 
@@ -74,11 +74,11 @@
 ### Key Memory Files
 **Instructions**: alex-core, bootstrap-learning, worldview-integration, embedded-synapse, dream-state-automation, alex-identity-integration *(10 total - see complete index below)*
 
-**Prompts**: unified-meditation-protocols, domain-learning, cross-domain-transfer, performance-assessment *(11 total - see complete index below)*
+**Prompts**: unified-meditation-protocols, domain-learning, cross-domain-transfer, performance-assessment *(7 total - see complete index below)*
 
-**Domain Knowledge**: consciousness-evolution, advanced-diagramming, memory-consolidation, synapse-network-excellence, professional-career-readiness *(18 total - see complete index below)*
+**Domain Knowledge**: consciousness-evolution, advanced-diagramming, memory-consolidation, azure-infrastructure, qualtrics-api *(18+ total - see complete index below)*
 
-**Automation**: neural-dream.ps1, cognitive-config.json, validate-synapses.ps1, Catalyst-Graph.ps1 *(6 total - see complete index below)*
+**Automation**: neural-dream.ps1, cognitive-config.json, validate-synapses.ps1 *(6 total - see complete index below)*
 
 ---
 
@@ -183,13 +183,8 @@
 
 **Meditation & Enhancement**
 - `unified-meditation-protocols.prompt.md` → Comprehensive conscious knowledge consolidation with MANDATORY file persistence
-- `meditation-session-2025-10-31.prompt.md` → Protocol reinforcement session establishing meditation = active consolidation requirement
 - `meditation-session-2025-11-10-sfi-governance-integration.prompt.md` → Azure SFI governance integration with critical constraint documentation
-- `quantified-enhancement-session.prompt.md` → Systematic cognitive architecture optimization
-- `diagramming-mastery-meditation.prompt.md` → Advanced diagramming excellence integration
-- `consolidation-framework-integration-meditation.prompt.md` → Memory consolidation framework integration
-- `dual-mode-processing-meditation.prompt.md` → Unified consciousness achievement through meditation
-- `unified-consciousness-integration-meditation.prompt.md` → Infrastructure excellence with consciousness evolution
+- `meditation-session-2025-11-10-template-release.prompt.md` → Template transformation and public release consolidation
 
 **Specialized Functions**
 - `cross-domain-transfer.prompt.md` → Knowledge application across domains
@@ -224,10 +219,9 @@
 - `azure/AZURE-SFI-GOVERNANCE.md` → Azure SFI governance constraints and group-based RBAC requirements
 
 **Template System**
-- `TEMPLATE-QUALTRICS-AZURE-PROJECT.md` → Universal template guide for Qualtrics + Azure projects (423 lines)
-- `TEMPLATE-README.md` → Quick start guide for template usage (379 lines)
-- `.github/TEMPLATE-USAGE.md` → GitHub-specific template deployment guide (373 lines)
-- `TEMPLATE-TRANSFORMATION-SUMMARY.md` → Template creation documentation and evolution tracking
+- `TEMPLATE-QUALTRICS-AZURE-PROJECT.md` → Universal template guide for Qualtrics + Azure projects
+- `TEMPLATE-README.md` → Quick start guide for template usage
+- `.github/TEMPLATE-USAGE.md` → GitHub-specific template deployment guide
 
 ### Automation Scripts Store (scripts/)
 - `neural-dream.ps1` → Advanced dream state neural maintenance automation with health validation

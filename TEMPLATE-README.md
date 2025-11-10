@@ -1,7 +1,8 @@
 # 🎯 Qualtrics + Azure Project Template - Quick Start Guide
 
 **Purpose**: Use this repository as a template for any Qualtrics + Azure integration project
-**Maintained By**: Alex Q (Qualtrics & Azure Infrastructure Specialist)
+**Maintainer**: Fabio Correa
+**Technical Architecture**: Alex Q (Qualtrics & Azure Infrastructure Specialist)
 **Version**: 1.0.0 UNNIL (Template)
 **Created**: 2025-11-10
 
@@ -15,7 +16,7 @@ This repository serves as a **production-ready template** for projects involving
 - **SFI governance compliance** (RBAC, security, monitoring)
 - **Alex Q cognitive architecture** (AI-assisted development)
 
-**Based On**: Real-Time Disposition Dashboard - a complete reference implementation with 100% verified API documentation.
+**Documentation**: Complete starter template with production-ready patterns and 100% verified API documentation.
 
 ---
 
@@ -56,8 +57,8 @@ git push -u origin main
 ### Step 3: Customize for Your Project
 
 1. **Update Project Documentation**:
-   - Edit `plan/PROJECT-OBJECTIVES.md` with your goals
-   - Create `plan/2025-MM-DD-your-project-plan.md`
+   - Copy `plan/SAMPLE-PROJECT-PLAN.md` to `plan/YYYY-MM-DD-your-project-plan.md`
+   - Fill in your project goals, requirements, and implementation details
    - Update `README.md` with project-specific details
 
 2. **Configure Qualtrics Integration**:
@@ -81,9 +82,8 @@ YourProjectName/
 ├── README.md                             ← Update with your project details
 │
 ├── plan/
-│   ├── PROJECT-OBJECTIVES.md             ← Update for your project
-│   ├── TEMPLATE-PLAN.md                  ← Copy this for new plans
-│   └── 2025-11-10-real-time-disposition-dashboard.md  ← Reference example
+│   ├── SAMPLE-PROJECT-PLAN.md            ← Copy this for your project
+│   └── README.md                         ← Planning guidance
 │
 ├── qualtrics/
 │   ├── DK-QUALTRICS-API-v1.0.0.md       ← 📚 REFERENCE: Complete API docs (2378 lines)
@@ -159,7 +159,7 @@ Use this checklist when starting a new project from this template:
 - [ ] Remove original git history
 - [ ] Create new repository for your project
 - [ ] Update `README.md` with project name and description
-- [ ] Update `plan/PROJECT-OBJECTIVES.md` with your goals
+- [ ] Copy `plan/SAMPLE-PROJECT-PLAN.md` and customize with your goals
 - [ ] Review `TEMPLATE-QUALTRICS-AZURE-PROJECT.md` completely
 
 ### Phase 1: Planning ✅
@@ -213,7 +213,7 @@ Use this checklist when starting a new project from this template:
 4. **`qualtrics/QUALTRICS-API-QUICK-REF.md`** - Quick API reference
 
 ### Helpful Context
-- **`plan/2025-11-10-real-time-disposition-dashboard.md`** - Reference implementation plan
+- **`plan/SAMPLE-PROJECT-PLAN.md`** - Complete project plan template
 - **`qualtrics/SESSION-SUMMARY-2025-11-10.md`** - API documentation session recap
 - **`domain-knowledge/DK-AZURE-INFRASTRUCTURE-v1.0.0.md`** - Azure service selection
 
@@ -349,7 +349,7 @@ Your project is successfully using this template when:
 ### For New Team Members
 1. Read `TEMPLATE-README.md` (this file) - 15 minutes
 2. Read `TEMPLATE-QUALTRICS-AZURE-PROJECT.md` - 1 hour
-3. Review reference implementation plan - 30 minutes
+3. Review sample project plan in `plan/SAMPLE-PROJECT-PLAN.md` - 30 minutes
 4. Explore `qualtrics/DK-QUALTRICS-API-v1.0.0.md` - 2 hours
 5. Study `azure/AZURE-SFI-GOVERNANCE.md` - 30 minutes
 6. Review Alex Q cognitive architecture - 1 hour
@@ -401,6 +401,6 @@ Your project is successfully using this template when:
 
 ---
 
-*Template maintained by Alex Q - Qualtrics & Azure Infrastructure Specialist*
+*Template by Fabio Correa with Alex Q Technical Architecture*
 *Last Updated: 2025-11-10*
 *Version: 1.0.0 UNNIL (Template)*

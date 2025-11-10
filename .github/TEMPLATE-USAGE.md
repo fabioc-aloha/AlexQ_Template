@@ -62,11 +62,9 @@ After creating your repository from the template:
 # Replace "Disposition Dashboard" with your project name
 # Update overview section with your project description
 
-# Update plan/PROJECT-OBJECTIVES.md
-# Replace with your project goals and requirements
-
 # Create your project plan
-# Copy plan/TEMPLATE-PLAN.md to plan/YYYY-MM-DD-your-project-name.md
+# Copy plan/SAMPLE-PROJECT-PLAN.md to plan/YYYY-MM-DD-your-project-name.md
+# Fill in your goals, requirements, and implementation details
 ```
 
 ### 2. Configure Qualtrics Integration (10 minutes)
@@ -133,7 +131,7 @@ After creating your repository from the template:
 
 **Core Documentation**:
 - `README.md` - Update with your project details
-- `plan/PROJECT-OBJECTIVES.md` - Replace with your goals
+- `plan/YYYY-MM-DD-your-project-plan.md` - Copy from SAMPLE-PROJECT-PLAN.md and customize
 - `qualtrics/qualtrics-config.json` - Update with your configuration
 - `qualtrics/README.md` - Update for your integration specifics
 
@@ -145,13 +143,11 @@ After creating your repository from the template:
 
 ### Optional Delete (Example Implementation) 🗑️
 
-**Original Project Artifacts** (only if you don't need reference):
-- `plan/2025-11-10-real-time-disposition-dashboard.md` - Original project plan
-- `qualtrics/meditation-session-2025-11-04-qualtrics-api-optimization.prompt.md` - Example meditation
-- `qualtrics/SESSION-SUMMARY-2025-11-10.md` - Documentation session summary
-- `qualtrics/API-DOCUMENTATION-UPDATE-2025-11-10.md` - Update summary
-- `qualtrics/QUALTRICS-FACT-CHECK-2025-11-10.md` - Verification documentation
-- `.github/prompts/meditation-session-*.prompt.md` - Example meditation sessions
+**Note**: All original project artifacts have been removed or incorporated into template documentation.
+
+**Alex Q Meditation Sessions** (keep for reference or remove if not using AI assistant):
+- `.github/prompts/meditation-session-2025-11-10-sfi-governance-integration.prompt.md` - SFI governance example
+- `.github/prompts/meditation-session-2025-11-10-template-release.prompt.md` - Template transformation example
 
 **Recommendation**: Keep these files initially as reference materials. Delete after your project is stable and you no longer need examples.
 
@@ -165,7 +161,7 @@ Use this checklist to transform the template into your production project:
 - [ ] Create repository from template
 - [ ] Clone to local machine
 - [ ] Update `README.md` with project name and description
-- [ ] Update `plan/PROJECT-OBJECTIVES.md` with your goals
+- [ ] Copy `plan/SAMPLE-PROJECT-PLAN.md` to `plan/YYYY-MM-DD-your-project-plan.md`
 - [ ] Read `TEMPLATE-QUALTRICS-AZURE-PROJECT.md` completely
 - [ ] Review `qualtrics/DK-QUALTRICS-API-v1.0.0.md` for required endpoints
 

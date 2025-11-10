@@ -12,7 +12,7 @@
 │                                                                           │
 │  ┌─────────────────┐  ┌──────────────────┐  ┌────────────────────────┐ │
 │  │  README.md      │  │ TEMPLATE-        │  │ .github/               │ │
-│  │  (Dual Purpose) │→ │ README.md        │→ │ TEMPLATE-USAGE.md      │ │
+│  │  (Main Entry)   │→ │ README.md        │→ │ TEMPLATE-USAGE.md      │ │
 │  │                 │  │ (Quick Start)    │  │ (GitHub Guide)         │ │
 │  └─────────────────┘  └──────────────────┘  └────────────────────────┘ │
 │                               ↓                                          │
@@ -121,7 +121,7 @@
               ↓
 ┌─────────────────────────────────────┐
 │ Step 3: Plan Project                │
-│ - Update PROJECT-OBJECTIVES.md      │
+│ - Copy SAMPLE-PROJECT-PLAN.md       │
 │ - Review DK-QUALTRICS-API for       │
 │   required endpoints                │
 │ - Calculate rate budget             │
@@ -173,11 +173,11 @@
 
 ### Entry Point Documents
 
-**README.md** - Dual Purpose Navigation
-- Purpose: Main entry point for both template users and reference implementation viewers
-- Key Section: "🎯 Dual Purpose Repository" with Path 1 (Template) vs. Path 2 (Reference)
-- Links to: TEMPLATE-README.md for template quick start
-- Maintains: Original project documentation for reference implementation
+**README.md** - Universal Template Entry Point
+- Purpose: Main entry point introducing the universal template
+- Key Section: "🎯 Repository Purpose" - Universal starter template for Qualtrics + Azure projects
+- Links to: TEMPLATE-README.md for quick start guide
+- Showcases: Complete documentation and production-ready patterns
 
 **TEMPLATE-README.md** (379 lines) - Quick Start
 - Purpose: Fast onboarding for new template users

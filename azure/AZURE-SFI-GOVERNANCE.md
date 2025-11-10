@@ -112,8 +112,9 @@
 
 ## 📖 Related Documentation
 
-- [Azure Infrastructure Plan](../plan/2025-11-10-real-time-disposition-dashboard.md)
-- [Project Objectives](../plan/PROJECT-OBJECTIVES.md)
+- [Sample Project Plan](../plan/SAMPLE-PROJECT-PLAN.md) - Template for planning with SFI compliance
+- [Infrastructure Domain Knowledge](../domain-knowledge/DK-AZURE-INFRASTRUCTURE-v1.0.0.md)
+- [Template Project Guide](../TEMPLATE-QUALTRICS-AZURE-PROJECT.md)
 
 ---
 
