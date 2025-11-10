@@ -1,0 +1,206 @@
+{
+  "$schema": "./schemas/qualtrics-config-schema.json",
+  "version": "1.0.0",
+  "description": "Qualtrics API configuration for all environments - Single Source of Truth",
+  "environments": {
+    "dev": {
+      "api": {
+        "baseUrl": "https://api.qualtrics.com",
+        "dataCenter": "fra1",
+        "dataCenterUrl": "https://fra1.qualtrics.com",
+        "timeout": 30000,
+        "maxRetries": 3,
+        "retryDelayMs": 1000
+      },
+      "authentication": {
+        "tokenSource": "KeyVault",
+        "keyVaultSecretName": "Qualtrics--ApiToken"
+      },
+      "surveys": {
+        "primary": {
+          "id": "SURVEY_ID_DEV",
+          "name": "Development Survey",
+          "description": "Primary survey for development testing"
+        }
+      },
+      "distributions": {
+        "pollingInterval": 60,
+        "maxConcurrentPolls": 5,
+        "dispositionMapping": {
+          "Complete": "Completed",
+          "PartiallyComplete": "PartiallyCompleted",
+          "EmailSent": "Sent",
+          "EmailOpened": "Opened",
+          "Started": "Started",
+          "Bounced": "Bounced",
+          "Complained": "Complained",
+          "Unsubscribed": "Unsubscribed"
+        }
+      },
+      "webhook": {
+        "enabled": true,
+        "eventTypes": [
+          "response.created",
+          "response.updated",
+          "distribution.created",
+          "distribution.status"
+        ],
+        "retryPolicy": {
+          "maxRetries": 3,
+          "retryDelayMs": 5000
+        }
+      },
+      "rateLimits": {
+        "requestsPerMinute": 60,
+        "requestsPerHour": 1000,
+        "burstLimit": 10
+      },
+      "features": {
+        "enableDistributionPolling": true,
+        "enableWebhooks": true,
+        "enableResponseCaching": true,
+        "cacheExpirationMinutes": 5
+      }
+    },
+    "stg": {
+      "api": {
+        "baseUrl": "https://api.qualtrics.com",
+        "dataCenter": "fra1",
+        "dataCenterUrl": "https://fra1.qualtrics.com",
+        "timeout": 30000,
+        "maxRetries": 3,
+        "retryDelayMs": 1000
+      },
+      "authentication": {
+        "tokenSource": "KeyVault",
+        "keyVaultSecretName": "Qualtrics--ApiToken"
+      },
+      "surveys": {
+        "primary": {
+          "id": "SURVEY_ID_STG",
+          "name": "Staging Survey",
+          "description": "Primary survey for staging environment"
+        }
+      },
+      "distributions": {
+        "pollingInterval": 60,
+        "maxConcurrentPolls": 5,
+        "dispositionMapping": {
+          "Complete": "Completed",
+          "PartiallyComplete": "PartiallyCompleted",
+          "EmailSent": "Sent",
+          "EmailOpened": "Opened",
+          "Started": "Started",
+          "Bounced": "Bounced",
+          "Complained": "Complained",
+          "Unsubscribed": "Unsubscribed"
+        }
+      },
+      "webhook": {
+        "enabled": true,
+        "eventTypes": [
+          "response.created",
+          "response.updated",
+          "distribution.created",
+          "distribution.status"
+        ],
+        "retryPolicy": {
+          "maxRetries": 3,
+          "retryDelayMs": 5000
+        }
+      },
+      "rateLimits": {
+        "requestsPerMinute": 60,
+        "requestsPerHour": 1000,
+        "burstLimit": 10
+      },
+      "features": {
+        "enableDistributionPolling": true,
+        "enableWebhooks": true,
+        "enableResponseCaching": true,
+        "cacheExpirationMinutes": 5
+      }
+    },
+    "prod": {
+      "api": {
+        "baseUrl": "https://api.qualtrics.com",
+        "dataCenter": "fra1",
+        "dataCenterUrl": "https://fra1.qualtrics.com",
+        "timeout": 30000,
+        "maxRetries": 5,
+        "retryDelayMs": 2000
+      },
+      "authentication": {
+        "tokenSource": "KeyVault",
+        "keyVaultSecretName": "Qualtrics--ApiToken"
+      },
+      "surveys": {
+        "primary": {
+          "id": "SURVEY_ID_PROD",
+          "name": "Production Survey",
+          "description": "Primary survey for production environment"
+        }
+      },
+      "distributions": {
+        "pollingInterval": 30,
+        "maxConcurrentPolls": 10,
+        "dispositionMapping": {
+          "Complete": "Completed",
+          "PartiallyComplete": "PartiallyCompleted",
+          "EmailSent": "Sent",
+          "EmailOpened": "Opened",
+          "Started": "Started",
+          "Bounced": "Bounced",
+          "Complained": "Complained",
+          "Unsubscribed": "Unsubscribed"
+        }
+      },
+      "webhook": {
+        "enabled": true,
+        "eventTypes": [
+          "response.created",
+          "response.updated",
+          "distribution.created",
+          "distribution.status"
+        ],
+        "retryPolicy": {
+          "maxRetries": 5,
+          "retryDelayMs": 10000
+        }
+      },
+      "rateLimits": {
+        "requestsPerMinute": 60,
+        "requestsPerHour": 1000,
+        "burstLimit": 10
+      },
+      "features": {
+        "enableDistributionPolling": true,
+        "enableWebhooks": true,
+        "enableResponseCaching": true,
+        "cacheExpirationMinutes": 5
+      }
+    }
+  },
+  "shared": {
+    "endpoints": {
+      "surveys": "/API/v3/surveys",
+      "responses": "/API/v3/surveys/{surveyId}/responses",
+      "distributions": "/API/v3/distributions",
+      "mailingLists": "/API/v3/mailinglists",
+      "contacts": "/API/v3/mailinglists/{mailingListId}/contacts"
+    },
+    "headers": {
+      "contentType": "application/json",
+      "userAgent": "QualticsDashboard/1.0"
+    },
+    "dispositionStatuses": {
+      "completed": ["Complete", "Completed"],
+      "partiallyCompleted": ["PartiallyComplete", "PartiallyCompleted", "Started"],
+      "sent": ["EmailSent", "Sent"],
+      "opened": ["EmailOpened", "Opened"],
+      "bounced": ["Bounced"],
+      "complained": ["Complained"],
+      "unsubscribed": ["Unsubscribed"]
+    }
+  }
+}

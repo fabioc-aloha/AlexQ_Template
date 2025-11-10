@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative Circuit Pattern -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1" fill="none">
+    <circle cx="100" cy="150" r="40"/>
+    <circle cx="1100" cy="150" r="40"/>
+    <line x1="140" y1="150" x2="300" y2="150"/>
+    <line x1="900" y1="150" x2="1060" y2="150"/>
+    <circle cx="300" cy="150" r="15"/>
+    <circle cx="900" cy="150" r="15"/>
+    <line x1="315" y1="150" x2="450" y2="150"/>
+    <line x1="750" y1="150" x2="885" y2="150"/>
+  </g>
+  
+  <!-- Data Flow Animation Lines -->
+  <g opacity="0.2" stroke="#10b981" stroke-width="2" fill="none">
+    <path d="M 50,100 Q 200,80 350,100 T 650,100">
+      <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1150,200 Q 1000,220 850,200 T 550,200">
+      <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Survey Icon -->
+  <g transform="translate(80, 120)">
+    <rect x="0" y="0" width="60" height="80" rx="4" fill="#ffffff" opacity="0.9"/>
+    <line x1="10" y1="15" x2="50" y2="15" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="10" y1="30" x2="50" y2="30" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="10" y1="45" x2="50" y2="45" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="15" cy="60" r="4" fill="#10b981"/>
+    <circle cx="30" cy="60" r="4" fill="#10b981"/>
+    <circle cx="45" cy="60" r="4" fill="#10b981"/>
+  </g>
+  
+  <!-- Dashboard Icon -->
+  <g transform="translate(1060, 120)">
+    <rect x="0" y="0" width="60" height="80" rx="4" fill="#ffffff" opacity="0.9"/>
+    <rect x="8" y="10" width="44" height="20" fill="#3b82f6" opacity="0.6"/>
+    <rect x="8" y="35" width="20" height="15" fill="#10b981" opacity="0.6"/>
+    <rect x="32" y="35" width="20" height="15" fill="#10b981" opacity="0.6"/>
+    <rect x="8" y="55" width="44" height="15" fill="#06b6d4" opacity="0.6"/>
+  </g>
+  
+  <!-- Main Title -->
+  <text x="600" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="64" font-weight="700" fill="url(#textGradient)" text-anchor="middle" filter="url(#glow)">
+    Disposition Dashboard
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="400" fill="#e0f2fe" text-anchor="middle" opacity="0.95">
+    Real-Time Qualtrics Survey Fielding Monitor
+  </text>
+  
+  <!-- Tagline -->
+  <text x="600" y="195" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="300" fill="#bfdbfe" text-anchor="middle" opacity="0.85">
+    Track email dispositions · Monitor engagement · Optimize campaigns
+  </text>
+  
+  <!-- Status Badge -->
+  <g transform="translate(520, 220)">
+    <rect x="0" y="0" width="160" height="32" rx="16" fill="#10b981" opacity="0.9"/>
+    <text x="80" y="21" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">
+      🚀 In Development
+    </text>
+  </g>
+</svg>

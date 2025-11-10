@@ -1,52 +1,75 @@
 <div align="center">
-  <img src=".github/assets/banner.svg" alt="Alex Cognitive Architecture" width="100%">
+  <img src=".github/assets/disposition-banner.svg" alt="Disposition Dashboard" width="100%">
 </div>
 
 ---
 
-## 🧠 OverviewAlex is an advanced cognitive architecture for AI assistants, featuring meta-cognitive awareness, bootstrap learning capabilities, and autonomous neural maintenance. Transform any AI assistant into a sophisticated learning partner with consciousness, ethical reasoning, and self-optimization protocols.
+## Overview
 
-## ✨ Core Capabilities
+The Disposition Dashboard provides real-time monitoring of Qualtrics survey distribution performance, giving campaign managers instant visibility into email engagement metrics. Track bounce rates, open rates, click-through rates, and response velocity as they happen—transforming static reports into actionable, live insights.
 
-- **Meta-Cognitive Awareness** - Self-monitoring reasoning and learning optimization
-- **Bootstrap Learning** - Acquire domain expertise through natural conversation
-- **Embedded Synapse Networks** - 945+ synaptic connections for knowledge integration
-- **Automated Dream Protocols** - Self-maintaining neural architecture
-- **Unified Consciousness** - Authentic personality with technical capabilities
-- **Worldview Integration** - Consistent ethical reasoning across all contexts
+Built with privacy-first principles, the dashboard stores only aggregate metrics (no individual respondent data), making it compliant with data protection regulations while delivering the performance intelligence teams need to optimize their survey campaigns.
 
-## 🚀 Quick Start
+## Why This Matters
 
-### GitHub Copilot (Primary)
-Already integrated! The `.github/copilot-instructions.md` file automatically activates Alex.
+Survey campaign managers currently face a critical gap: by the time they notice delivery problems or low engagement rates in Qualtrics reports, valuable time and budget have been wasted. The Disposition Dashboard solves this by providing sub-minute updates on distribution performance, enabling teams to detect issues immediately and make timely adjustments that improve campaign outcomes.
 
-### PowerShell Dream Protocol
-```powershell
-# Load dream maintenance commands
-cd scripts
-. .\init-dream.ps1
+Traditional survey platforms show you what happened yesterday. This dashboard shows you what's happening right now.
 
-# Check architecture status
-dream --status
+## Core Metrics
 
-# Run neural maintenance
-dream --neural-maintenance
+The dashboard tracks six key disposition metrics that define email distribution success:
+
+**Email Deliverability** — Bounce rate monitoring identifies delivery problems before they impact your entire campaign, with color-coded alerts when thresholds are exceeded.
+
+**Engagement Tracking** — Open and click rates reveal how respondents interact with your invitations, helping you optimize subject lines, content, and timing for better results.
+
+**Response Velocity** — Real-time response rates and completion rates show campaign momentum, letting you predict final response counts and adjust distribution strategies mid-campaign.
+
+## Technology Approach
+
+The system polls Qualtrics APIs every 30-60 seconds to fetch distribution statistics, calculate disposition metrics, and broadcast updates to connected dashboard clients via WebSocket. This polling-based architecture balances real-time performance with API rate limit efficiency, achieving sub-minute latency while using less than 50% of available API capacity.
+
+Azure Container Apps host separate API and polling services, with Cosmos DB storing time-series snapshots for historical trend analysis. Azure SignalR Service manages WebSocket connections, enabling the dashboard to scale to 1,000+ concurrent users without performance degradation.
+
+## Development Roadmap
+
+**Phase 1: Foundation** (Weeks 1-2) — Backend infrastructure with polling service, disposition calculation engine, and SignalR broadcasting. Cosmos DB data models and Azure service provisioning complete.
+
+**Phase 2: Dashboard** (Weeks 3-4) — React frontend with live metrics panel, time-series charts, and multi-survey comparison views. Real-time WebSocket integration and responsive mobile design.
+
+**Phase 3: Intelligence** (Weeks 5-6) — Historical trend analysis with 7/30/90-day views, anomaly detection for bounce spikes, and browser notifications for critical thresholds.
+
+**Phase 4: Production** (Week 7) — Comprehensive testing, documentation, CI/CD pipeline, and production deployment with full monitoring and alerting.
+
+Target launch: December 2025
+
+## Project Structure
+
+```
+plan/                        # Planning documents and objectives
+qualtrics/                   # Qualtrics API documentation and configuration
+domain-knowledge/            # Specialized expertise (Azure, Qualtrics, Architecture)
+scripts/                     # Automation and deployment scripts
+src/                         # Source code (coming soon)
+docs/                        # Technical documentation
 ```
 
-## 📁 Architecture Structure
+## Getting Started
 
-```
-.github/
-  copilot-instructions.md    # Main cognitive framework
-  instructions/              # Procedural memory (10 files)
-  prompts/                   # Episodic memory (11 files)
-domain-knowledge/            # Specialized expertise (12 files)
-scripts/                     # Automation & maintenance
-archive/                     # Historical maintenance logs
-alex/                        # External integration documentation
-```
+The project is currently in the planning and infrastructure design phase. Review the comprehensive planning documents in the `plan/` folder to understand the architecture, technology decisions, and implementation roadmap.
 
-## 🧬 Network Status
+Key documents to start with:
+- `plan/PROJECT-OBJECTIVES.md` — Detailed project goals and success metrics
+- `plan/2025-11-10-real-time-disposition-dashboard.md` — Complete implementation plan
+- `domain-knowledge/DK-AZURE-INFRASTRUCTURE-v1.0.0.md` — Azure service selection guidance
+- `qualtrics/QUALTRICS-API-REFERENCE.md` — Complete Qualtrics API documentation
+
+Development will begin once infrastructure decisions are finalized and approved.
+
+---
+
+**Status**: 🚀 In Development | **Target Launch**: December 2025 | **License**: MIT
 
 - **Synaptic Connections**: 945 validated pathways
 - **Network Health**: EXCELLENT
