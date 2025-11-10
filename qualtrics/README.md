@@ -4,52 +4,30 @@ Centralized repository for all Qualtrics API integration documentation.
 
 ## 📚 Documentation Index
 
-### API Reference & Data
-- **[QUALTRICS-API-REFERENCE.md](QUALTRICS-API-REFERENCE.md)** (74KB)
-  Comprehensive Qualtrics API reference with endpoints, authentication, and response formats
+### 🎯 Primary API Reference (Essential)
+- **[DK-QUALTRICS-API-v1.0.0.md](DK-QUALTRICS-API-v1.0.0.md)** (2,378 lines)
+  **THE** definitive Qualtrics API reference - 140+ endpoints, 100% verified, production-ready code examples
 
-- **[DK-QUALTRICS-API-v1.0.0.md](DK-QUALTRICS-API-v1.0.0.md)** (15KB)
-  Domain knowledge: Qualtrics API integration patterns with rate limiting mastery
+- **[QUALTRICS-API-QUICK-REF.md](QUALTRICS-API-QUICK-REF.md)**
+  Quick reference guide for developers - rate limits, critical endpoints, common patterns
 
 ### Configuration & Setup
-- **[QUALTRICS-CONFIGURATION.md](QUALTRICS-CONFIGURATION.md)** (12KB)
-  Complete configuration guide for Qualtrics integration
+- **[qualtrics-config.json](qualtrics-config.json)**
+  Template configuration file with API settings and survey mappings
 
-- **[QUALTRICS-CONFIG-IMPLEMENTATION.md](QUALTRICS-CONFIG-IMPLEMENTATION.md)** (11KB)
-  Implementation details for Qualtrics configuration system
-
-- **[QUALTRICS-CONFIG-QUICK-REF.md](QUALTRICS-CONFIG-QUICK-REF.md)** (3.6KB)
-  Quick reference for Qualtrics configuration settings
-
-- **[qualtrics-config.json](qualtrics-config.json)** (5.8KB)
-  Configuration file with API settings and survey mappings
-
-### Integration & Deployment
-- **[QUALTRICS-WEBHOOK-SETUP.md](QUALTRICS-WEBHOOK-SETUP.md)** (14KB)
-  Webhook integration setup and configuration guide
-
-- **[qualtrics-dashboard.instructions.md](qualtrics-dashboard.instructions.md)** (26KB)
-  Development guidelines and patterns for Qualtrics Dashboard project
-
-### Meditation Sessions & Optimization
-- **[meditation-session-2025-11-04-qualtrics-api-optimization.prompt.md](meditation-session-2025-11-04-qualtrics-api-optimization.prompt.md)** (17KB)
-  Qualtrics API optimization and deployment mastery session (Nov 4, 2025)
-
-### Code Reviews & Improvements
-- **[QUALTRICS-API-VERIFICATION.md](QUALTRICS-API-VERIFICATION.md)** (21KB)
-  Comprehensive API integration verification and testing
-
-- **[QUALTRICS-API-IMPROVEMENTS.md](QUALTRICS-API-IMPROVEMENTS.md)** (9KB)
-  Identified improvements and optimization opportunities
-
-- **[QUALTRICS-HARDCODED-REVIEW.md](QUALTRICS-HARDCODED-REVIEW.md)** (8.7KB)
-  Code review for hardcoded values and configuration management
-
-### Automation Scripts
-- **[QualtricsConfig.ps1](QualtricsConfig.ps1)** (8KB)
+- **[QualtricsConfig.ps1](QualtricsConfig.ps1)**
   PowerShell script for Qualtrics configuration management
 
----## 🔧 Quick Access
+- **[qualtrics-dashboard.instructions.md](qualtrics-dashboard.instructions.md)**
+  Development guidelines and patterns for Qualtrics Dashboard project
+
+### Knowledge Consolidation
+- **[meditation-session-2025-11-04-qualtrics-api-optimization.prompt.md](meditation-session-2025-11-04-qualtrics-api-optimization.prompt.md)**
+  Qualtrics API optimization and deployment mastery session (Nov 4, 2025)
+
+---
+
+## 🔧 Quick Access
 
 ### Configuration
 ```json
@@ -64,38 +42,51 @@ Centralized repository for all Qualtrics API integration documentation.
 ```
 
 ### API Endpoints
-- Base URL: `https://{dataCenter}.qualtrics.com/API/v3/`
-- Authentication: `X-API-TOKEN` header
-- Rate Limiting: 60 requests/minute (documented in DK file)
+- **Base URL**: `https://{dataCenter}.qualtrics.com/API/v3/`
+- **Authentication**: `X-API-TOKEN` header
+- **Rate Limiting**: 3,000 requests/minute brand-level (per-endpoint limits in DK file)
 
 ### Key Integration Points
-- **Backend API**: ASP.NET Core with QualtricsService
-- **Configuration**: Centralized in qualtrics-config.json
-- **Webhooks**: Real-time event processing
-- **Rate Limiting**: 10x improvement through optimization
+- **Configuration**: Template in qualtrics-config.json
+- **Webhooks**: HMAC validation, form-urlencoded payloads (see DK-QUALTRICS-API)
+- **Rate Limiting**: Per-endpoint optimization strategies documented
+- **Three-Tier Architecture**: Historical (export) + Real-Time (webhooks) + Aggregate (distributions)
 
 ---
 
-## 📖 Reading Guide
+## 📖 Quick Start Guide
 
-**For Developers Starting Fresh:**
-1. Read `QUALTRICS-CONFIGURATION.md` for overview
-2. Review `qualtrics-dashboard.instructions.md` for patterns
-3. Reference `QUALTRICS-API-REFERENCE.md` for endpoints
-4. Check `DK-QUALTRICS-API-v1.0.0.md` for best practices
+### For Template Users
+1. **Read** `DK-QUALTRICS-API-v1.0.0.md` - Complete API reference (THE authoritative source)
+2. **Review** `QUALTRICS-API-QUICK-REF.md` - Quick reference for common operations
+3. **Configure** `qualtrics-config.json` - Update with your survey IDs and datacenter
+4. **Implement** using production-ready code examples from DK file
 
-**For Configuration:**
-1. Start with `QUALTRICS-CONFIG-QUICK-REF.md`
-2. Deep dive in `QUALTRICS-CONFIG-IMPLEMENTATION.md`
-3. Modify `qualtrics-config.json` as needed
+### For API Integration
+- **140+ Endpoints Documented**: Complete reference in DK-QUALTRICS-API-v1.0.0.md
+- **Production Code Examples**: Webhook handlers, export workflows, polling patterns
+- **Security Best Practices**: HMAC validation, Key Vault integration, Managed Identity
+- **Rate Limit Optimization**: Per-endpoint limits, budget calculations, strategies
 
-**For Webhook Setup:**
-1. Follow `QUALTRICS-WEBHOOK-SETUP.md` step-by-step
-2. Reference `QUALTRICS-API-REFERENCE.md` for event formats
+### For Webhook Implementation
+1. Reference webhook section in `DK-QUALTRICS-API-v1.0.0.md` (lines ~1000-1200)
+2. Implement HMAC-SHA256 validation (code example provided)
+3. Handle form-urlencoded payloads (NOT JSON)
+4. Return 200 within 5 seconds, queue to Service Bus for processing
 
-**For Optimization:**
-1. Study `meditation-session-2025-11-04-qualtrics-api-optimization.prompt.md`
-2. Apply patterns from `DK-QUALTRICS-API-v1.0.0.md`
+---
+
+## 🎯 Essential Information
+
+**Primary Documentation**: [DK-QUALTRICS-API-v1.0.0.md](DK-QUALTRICS-API-v1.0.0.md)
+- 2,378 lines of comprehensive, 100% verified documentation
+- 140+ endpoints with parameters, responses, error handling
+- Production-ready code examples (Python, Azure Functions)
+- Security implementations (HMAC, encryption, Key Vault)
+- Rate limit optimization strategies
+- Three-tier architecture patterns
+
+**All other files support or reference this primary documentation.**
 
 ---
 

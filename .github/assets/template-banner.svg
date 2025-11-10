@@ -1,0 +1,85 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078D4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00BCF2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A4EF;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFB900;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative pattern -->
+  <circle cx="50" cy="50" r="80" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1150" cy="250" r="100" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1100" cy="80" r="60" fill="rgba(255,255,255,0.05)"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" 
+        fill="white" text-anchor="middle" filter="url(#shadow)">
+    Qualtrics + Azure
+  </text>
+  
+  <text x="600" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="600" 
+        fill="white" text-anchor="middle" filter="url(#shadow)">
+    Project Template
+  </text>
+  
+  <!-- Divider -->
+  <line x1="350" y1="180" x2="850" y2="180" stroke="url(#accentGradient)" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Subtitle -->
+  <text x="600" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="400" 
+        fill="rgba(255,255,255,0.95)" text-anchor="middle">
+    Reference Implementation + Universal Template
+  </text>
+  
+  <!-- Icons/Badges -->
+  <g transform="translate(280, 245)">
+    <!-- Real-time badge -->
+    <rect x="0" y="0" width="140" height="35" rx="17.5" fill="rgba(255,255,255,0.15)"/>
+    <text x="70" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" 
+          fill="white" text-anchor="middle">📊 Real-Time</text>
+  </g>
+  
+  <g transform="translate(440, 245)">
+    <!-- 140+ APIs badge -->
+    <rect x="0" y="0" width="140" height="35" rx="17.5" fill="rgba(255,255,255,0.15)"/>
+    <text x="70" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" 
+          fill="white" text-anchor="middle">📚 140+ APIs</text>
+  </g>
+  
+  <g transform="translate(600, 245)">
+    <!-- Production Ready badge -->
+    <rect x="0" y="0" width="160" height="35" rx="17.5" fill="rgba(255,255,255,0.15)"/>
+    <text x="80" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" 
+          fill="white" text-anchor="middle">✅ Production</text>
+  </g>
+  
+  <g transform="translate(780, 245)">
+    <!-- SFI Compliant badge -->
+    <rect x="0" y="0" width="160" height="35" rx="17.5" fill="rgba(255,255,255,0.15)"/>
+    <text x="80" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" 
+          fill="white" text-anchor="middle">🔐 SFI Ready</text>
+  </g>
+</svg>

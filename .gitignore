@@ -1,0 +1,164 @@
+# ===================================
+# Security - NEVER commit these files
+# ===================================
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Azure credentials
+.azure/
+azureauth.json
+ServiceConfiguration.*.cscfg
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ===================================
+# Build outputs
+# ===================================
+
+# .NET / C#
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.dll
+*.exe
+*.pdb
+*.cache
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Visual Studio
+.vs/
+*.vsidx
+*.vspscc
+*.vspcc
+*.sln.cache
+
+# Rider
+.idea/
+*.sln.iml
+
+# ===================================
+# Node.js (if using for frontend)
+# ===================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# ===================================
+# Python (if using for scripts)
+# ===================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# ===================================
+# Operating System
+# ===================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ===================================
+# IDEs and Editors
+# ===================================
+
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# ===================================
+# Testing and Coverage
+# ===================================
+
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+# ===================================
+# Temporary and Cache Files
+# ===================================
+
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+*.orig
+
+# ===================================
+# Application-specific
+# ===================================
+
+# Local configuration overrides
+appsettings.Development.json
+appsettings.Local.json
+local.settings.json
+
+# Function app
+.azurefunctions/
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================
+# Documentation builds
+# ===================================
+
+docs/_build/
+site/
+
+# ===================================
+# Archives
+# ===================================
+
+*.zip
+*.tar.gz
+*.rar

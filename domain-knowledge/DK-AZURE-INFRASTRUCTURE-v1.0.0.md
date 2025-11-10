@@ -3,14 +3,33 @@
 **Version**: 1.0.0 UNNILUNNILNIL (un-nil-un-nil-nil)
 **Domain**: Azure Infrastructure Architecture & Service Selection
 **Specialized Focus**: Real-Time Disposition Dashboard on Azure
-**Status**: Active - Decision Framework
-**Last Updated**: 2025-11-10
+**Status**: Active - Decision Framework with SFI Governance Integration
+**Last Updated**: 2025-11-10 (SFI Governance Added)
+
+---
+
+## 🔒 **CRITICAL: SFI Governance Compliance**
+
+⚠️ **MANDATORY REQUIREMENT**: All Azure infrastructure recommendations MUST comply with Secure Foundation for Infrastructure (SFI) governance rules.
+
+**Key Constraints**:
+- **RBAC Assignment**: All permissions MUST target `[your-admin-group]` (Aloha Admins) group
+- **Individual Accounts**: ❌ CANNOT receive RBAC role assignments
+- **Limited Personal Permissions**: Deployment account has restricted access
+- **Admin Escalation**: Admin assistance available for elevated permission requirements
+
+**Compliance Reference**: See [AZURE-SFI-GOVERNANCE.md](../azure/AZURE-SFI-GOVERNANCE.md) for complete governance rules and design principles.
+
+**Impact on This Document**:
+- Every service recommendation includes `[your-admin-group]` RBAC requirements
+- Deployment strategies account for admin-required permission setup
+- Architecture choices favor SFI-compatible permission models
 
 ---
 
 ## 🎯 Purpose & Context
 
-**Objective**: Provide comprehensive guidance for selecting the right Azure infrastructure services for a real-time Qualtrics disposition dashboard, learning from previous implementation challenges.
+**Objective**: Provide comprehensive guidance for selecting the right Azure infrastructure services for a real-time Qualtrics disposition dashboard, learning from previous implementation challenges and complying with SFI governance constraints.
 
 **Critical Success Factors**:
 - ✅ **Reliability**: No production failures or service disruptions
@@ -744,6 +763,17 @@ var client = new CosmosClient(endpoint, credential);
 
 ## 🎓 Implementation Checklist
 
+### Phase 0: SFI Governance & Permissions Setup
+- [ ] **Request Admin Assistance**: Engage admin for RBAC assignments
+- [ ] **Assign `[your-admin-group]` Permissions**: Grant required roles to Aloha Admins group
+  - Resource Group: Contributor role (create/manage resources)
+  - Key Vault: Key Vault Administrator (secrets management)
+  - Container Registry: AcrPush + AcrPull (image operations)
+  - Cosmos DB: Cosmos DB Account Contributor (database management)
+  - SignalR Service: SignalR Service Owner (service management)
+- [ ] **Verify Personal Access**: Confirm deployment account has necessary inherited permissions
+- [ ] **Document Permission Scope**: Record granted roles and their scope (subscription/RG/resource)
+
 ### Phase 1: Foundation
 - [ ] Create Azure Resource Group (`rg-disposition-{env}`)
 - [ ] Provision Container Apps Environment
@@ -791,6 +821,7 @@ var client = new CosmosClient(endpoint, credential);
 **Azure Integration**:
 - `[azure.instructions.md]` (0.90, best-practices, bidirectional) - "Azure best practices applied to infrastructure selection"
 - `[azurecosmosdb.instructions.md]` (0.95, database-selection, bidirectional) - "Cosmos DB guidance for disposition storage"
+- `[azure/AZURE-SFI-GOVERNANCE.md]` (1.0, constrains, bidirectional) - "SFI governance rules shape all Azure infrastructure decisions and RBAC requirements"
 
 **Documentation Standards**:
 - `[DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md]` (0.85, documentation-quality, unidirectional) - "Infrastructure documentation quality standards"
