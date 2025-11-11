@@ -108,7 +108,7 @@ docs/                        # Technical documentation
 - [TEMPLATE-README.md](TEMPLATE-README.md) — Quick start guide (379 lines)
 - [TEMPLATE-QUALTRICS-AZURE-PROJECT.md](TEMPLATE-QUALTRICS-AZURE-PROJECT.md) — Complete patterns (423 lines)
 - [.github/TEMPLATE-USAGE.md](.github/TEMPLATE-USAGE.md) — GitHub deployment (373 lines)
-- [qualtrics/DK-QUALTRICS-API-v1.0.0.md](qualtrics/DK-QUALTRICS-API-v1.0.0.md) — API reference (2,378 lines)
+- [qualtrics/DK-QUALTRICS-API-v1.0.0.md](qualtrics/DK-QUALTRICS-API-v1.0.0.md) — API reference (2,714 lines) ⭐ **Updated v1.3.0**
 
 ### Template Documentation Structure
 
@@ -132,7 +132,7 @@ The template includes comprehensive documentation covering architecture patterns
 ### For Template Users
 - **Quick Start**: [TEMPLATE-README.md](TEMPLATE-README.md) → 15-30 minutes
 - **Complete Guide**: [TEMPLATE-QUALTRICS-AZURE-PROJECT.md](TEMPLATE-QUALTRICS-AZURE-PROJECT.md) → 1-2 hours
-- **API Reference**: [qualtrics/DK-QUALTRICS-API-v1.0.0.md](qualtrics/DK-QUALTRICS-API-v1.0.0.md) → Reference
+- **API Reference**: [qualtrics/DK-QUALTRICS-API-v1.0.0.md](qualtrics/DK-QUALTRICS-API-v1.0.0.md) → Comprehensive reference with fact-check sources ⭐ **v1.3.0**
 - **SFI Governance**: [azure/AZURE-SFI-GOVERNANCE.md](azure/AZURE-SFI-GOVERNANCE.md) → Critical reading
 
 ### For Contributors
