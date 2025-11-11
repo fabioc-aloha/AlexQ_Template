@@ -79,12 +79,6 @@ Whether you're starting a new Qualtrics project or improving an existing one, th
 - Cosmos DB schemas optimized for query patterns
 - Azure Functions with Managed Identity authentication
 
-### Alex Q Integration
-- **AI-assisted development** with specialized Qualtrics + Azure expertise
-- **Bootstrap learning** for rapid domain knowledge acquisition
-- **Template-aware workflows** for consistent project initialization
-- **Domain knowledge files** reusable across projects
-
 **📖 Full Template Guide**: [TEMPLATE-QUALTRICS-AZURE-PROJECT.md](TEMPLATE-QUALTRICS-AZURE-PROJECT.md) (423 lines)
 
 ---
@@ -142,7 +136,6 @@ The template includes comprehensive documentation covering architecture patterns
 - **SFI Governance**: [azure/AZURE-SFI-GOVERNANCE.md](azure/AZURE-SFI-GOVERNANCE.md) → Critical reading
 
 ### For Contributors
-- **Alex Q Architecture**: [.github/copilot-instructions.md](.github/copilot-instructions.md)
 - **Domain Knowledge**: [domain-knowledge/](domain-knowledge/) directory
 - **Contributing Guidelines**: [CONTRIBUTING.md](CONTRIBUTING.md)
 
@@ -158,13 +151,6 @@ The template includes comprehensive documentation covering architecture patterns
 - **API Documentation**: 140+ endpoints (100% verified)
 - **Code Examples**: 10+ production-ready patterns
 - **Documentation**: 1,600+ lines of template guides
-- **Alex Q Integration**: v1.0.5 UNNILPENTIUM (Template-Enhanced)
-
-**Alex Q Cognitive Network**:
-- **Synaptic Connections**: 187 validated pathways (+2 from SFI governance integration)
-- **Network Health**: EXCELLENT
-- **Orphan Files**: 0
-- **Connectivity**: 100%
 
 ---
 
@@ -194,19 +180,41 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 **Fabio Correa**
 - Template Creator & Maintainer
-- With Alex Q - Qualtrics & Azure Infrastructure Specialist
 - Enabling teams to build world-class Qualtrics + Azure integrations
 
 ---
 
 <div align="center">
-  <p><em>Built with cognitive architecture and real-world production patterns</em></p>
+  <p><em>Built with real-world production patterns</em></p>
 </div>
 
-## 🔧 Maintenance
+---
 
-Alex includes automated neural maintenance through PowerShell dream protocols:
+## 🤖 AI-Assisted Development
 
+This template was developed using **Alex Q**, an advanced AI cognitive architecture for software development. The cognitive system files are included in this repository and demonstrate patterns for AI-assisted development workflows.
+
+### Alex Q Features
+- **Specialized Knowledge**: Qualtrics + Azure expertise built into the system
+- **Bootstrap Learning**: Rapid domain knowledge acquisition through conversation
+- **Template-Aware Workflows**: Consistent project initialization patterns
+- **Cognitive Maintenance**: Automated neural optimization and health monitoring
+
+### Cognitive Architecture Details
+
+**System Stats**:
+- **Version**: v1.0.5 UNNILPENTIUM (Template-Enhanced)
+- **Synaptic Connections**: 187 validated pathways
+- **Network Health**: EXCELLENT
+- **Domain Knowledge Files**: 18+ specialized modules
+
+**Explore the System**:
+- **Architecture Guide**: [.github/copilot-instructions.md](.github/copilot-instructions.md)
+- **Dream Protocols**: `scripts/README.md` (automated cognitive maintenance)
+- **Instructions**: `.github/instructions/` directory (10 instruction files)
+- **Prompts**: `.github/prompts/` directory (7 prompt files)
+
+**Maintenance Commands** (PowerShell):
 ```powershell
 dream --status              # Check architecture health
 dream --neural-maintenance  # Run automated optimization
@@ -214,13 +222,11 @@ dream --health-check        # Validate synaptic connections
 dream --help               # See all available commands
 ```
 
-## 📖 Alex Q Documentation
+**Learn More**: Visit [Catalyst-NEWBORN](https://github.com/fabioc-aloha/Catalyst-NEWBORN) to explore the foundational cognitive architecture framework.
 
-**Note**: Alex Q is the AI assistant architecture used to build this template. These files are optional but demonstrate advanced AI-assisted development patterns.
+---
 
-- **Architecture Details**: `.github/copilot-instructions.md`
-- **Dream Protocols**: `scripts/README.md` (automated cognitive maintenance)
-- **Instructions**: `.github/instructions/` directory
+**Note**: The AI cognitive system is completely optional. You can use this template without engaging with any of the Alex Q architecture files.
 
 ## 🎯 Research Foundation
 
